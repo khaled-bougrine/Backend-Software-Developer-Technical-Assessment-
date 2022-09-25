@@ -58,6 +58,13 @@ services:
       - ./nginx/ssl:/etc/nginx/ssl:ro
       - ./nginx/index.html:/app/html:ro
 ```
+
+``` 
+$ docker-compose up 
+$ https://localhost/temurin
+
+
+```
 ## Task 02:
 An API hosted in the Docker environment that generates an email address based on the parameters of the request and an expression.
 ## Input
