@@ -58,7 +58,7 @@ services:
       - ./nginx/ssl:/etc/nginx/ssl:ro
       - ./nginx/index.html:/app/html:ro
 ```
-
+testing the application
 ``` 
 $ docker-compose up 
 $ https://localhost/temurin
