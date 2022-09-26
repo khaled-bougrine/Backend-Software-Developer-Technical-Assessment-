@@ -68,9 +68,7 @@ $ https://localhost/temurin
 ## Task 02:
 An API hosted in the Docker environment that generates an email address based on the parameters of the request and an expression.
 ## Input
-this api can accept any number of query parameters named "input1", "input2", "input3"...
-### Example
-So the folder structure of this mini-project, will end up looking something like this:
+### this api can accept any number of query parameters named "input1", "input2", "input3"...
 ```
 .
 Input1  :  “Jean-Louis”
@@ -80,7 +78,7 @@ Input4  :  “peoplespheres”
 Input5  : “fr” 
 
 ```
-the expression is a parameter called expression
+### the expression is a parameter called expression
 ```
 .
 
@@ -106,7 +104,7 @@ input1.SecondtWords(1)              # get the Second word of input number 1
 etc
 
 ```
-test the api 
+### testing the api 
 ``` 
 $ curl http://localhost:8080/api/v1.0/emails-generator?input1=Jean-Louis&input2=Jean-Charles Mignard&input3=external”&input4=peoplespheres&input5=fr
 &expression=input1.eachWordFirstChars(1) ~ '.' ~ (input2.wordsCount() > 1 ? input2.lastWords(-1).eachWordFirstChars(1) ~ input2.lastWords(1) : input2 ) ~ '@' ~ input3 ~ '.' ~ input4 ~ '.' ~ input5
